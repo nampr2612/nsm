@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-    
-       
-          for (let i = 0; i < 2; i++) {
-            let nhietdo = parseInt( prompt("Nhập vào nhiệt độ"));
-            if (nhietdo == "") {
-         alert("yeu cau nhap lieu ")
-      } else {
-         if(nhietdo<20){
-            alert("lanh qua tang nhiet do len");
-         }  else if(nhietdo>100){
-            alert("nong qua giam nhiet de");
-         } else {
-            document.write(nhietdo + "<br>");
-         }
-            
-          }
-      
-     }
-          
-         
-              
 
-        
-    </script>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
     
+
+    let nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+    while(nhietdo<20 || nhietdo>100){
+      
+      if(nhietdo<20){
+         alert("nhiet do qua lanh tang len");
+         nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+      }else if (nhietdo>100){
+         alert("nhiet do qua nong giam xuong");
+         nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+      }
+   }
+ document.write(nhietdo+"độ")
+
+
+
+
+
+
+
+
+   </script>
+
 </body>
+
 </html>
