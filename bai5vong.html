@@ -10,27 +10,39 @@
 
 <body>
    <script>
-    
 
-    let nhietdo = parseFloat(prompt("nhap nhiet do vao"));
-    while(nhietdo<20 || nhietdo>100){
-      
-      if(nhietdo<20){
-         alert("nhiet do qua lanh tang len");
-         nhietdo = parseFloat(prompt("nhap nhiet do vao"));
 
-      }else if (nhietdo>100){
-         alert("nhiet do qua nong giam xuong");
-         nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+      // let nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+      // while (nhietdo < 20 || nhietdo > 100) {
 
+      //    if (nhietdo < 20) {
+      //       alert("nhiet do qua lanh tang len");
+      //       nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+      //    } else if (nhietdo > 100) {
+      //       alert("nhiet do qua nong giam xuong");
+      //       nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+      //    }
+      // }
+      // document.write(nhietdo + "độ")
+
+
+   
+        for ( var nhietdo = parseFloat(prompt("nhap nhiet do vao"));nhietdo < 20 || nhietdo > 100;) {
+
+         if (nhietdo < 20) {
+            alert("nhiet do qua lanh tang len");
+            nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+         } else if (nhietdo > 100) {
+            alert("nhiet do qua nong giam xuong");
+            nhietdo = parseFloat(prompt("nhap nhiet do vao"));
+
+         }
       }
-   }
- document.write(nhietdo+"độ")
-
-
-
-
-
+      document.write(nhietdo + "độ")
+   
 
 
 
